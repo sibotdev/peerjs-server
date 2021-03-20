@@ -58,10 +58,7 @@ const opts = yargs
       describe: "custom path",
       default: "/"
     },
-    allow_discovery: {
-      demandOption: 1,
-      describe: "allow discovery of peers"
-    },
+    allow_discovery: true,
     proxied: {
       demandOption: false,
       describe: "Set true if PeerServer stays behind a reverse proxy",
