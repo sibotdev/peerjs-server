@@ -8,7 +8,7 @@ const defaultConfig = {
     key: "peerjs",
     path: "/",
     concurrent_limit: 5000,
-    allow_discovery: true,
+    allow_discovery: false,
     proxied: false,
     cleanup_out_msgs: 1000,
 };
