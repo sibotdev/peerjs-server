@@ -49,9 +49,10 @@ const opts = yargs
       describe: "host"
     },
     port: {
-      demandOption: true,
+      demandOption: false,
       alias: "p",
-      describe: "port"
+      describe: "port",
+      default: "9000"
     },
     path: {
       demandOption: false,
