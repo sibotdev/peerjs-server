@@ -51,7 +51,8 @@ const opts = yargs
     port: {
       demandOption: true,
       alias: "p",
-      describe: "port"
+      describe: "port",
+      default: "9000"
     },
     path: {
       demandOption: false,
@@ -66,7 +67,7 @@ const opts = yargs
     proxied: {
       demandOption: false,
       describe: "Set true if PeerServer stays behind a reverse proxy",
-      default: true
+      default: false
     }
   })
   .boolean("allow_discovery")
