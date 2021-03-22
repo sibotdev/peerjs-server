@@ -49,10 +49,9 @@ const opts = yargs
       describe: "host"
     },
     port: {
-      demandOption: false,
+      demandOption: true,
       alias: "p",
-      describe: "port",
-      default: "9000"
+      describe: "port"
     },
     path: {
       demandOption: false,
@@ -100,7 +99,7 @@ const server = PeerServer(opts, server => {
 
   console.log(
     "Started PeerServer on %s, port: %s, path: %s (v. %s)",
-    host, port, userPath || "/", version
+    host, 9000, userPath || "/", version
   );
 
   const shutdownApp = () => {
