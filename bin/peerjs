@@ -36,14 +36,12 @@ const opts = yargs
       default: "peerjs"
     },
     sslkey: {
-      demandOption: true,
-      describe: "path to SSL key",
-      default: 'ciao.txt'
+      demandOption: false,
+      describe: "path to SSL key"
     },
     sslcert: {
-      demandOption: true,
-      describe: "path to SSL certificate",
-      default: 'ciao.txt'
+      demandOption: false,
+      describe: "path to SSL certificate"
     },
     host: {
       demandOption: false,
