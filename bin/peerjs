@@ -51,8 +51,7 @@ const opts = yargs
     port: {
       demandOption: true,
       alias: "p",
-      describe: "port",
-      default: "9000"
+      describe: "port"
     },
     path: {
       demandOption: false,
