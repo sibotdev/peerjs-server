@@ -64,9 +64,9 @@ const opts = yargs
         default: true
     },
     proxied: {
-      demandOption: false,
+      demandOption: true,
       describe: "Set true if PeerServer stays behind a reverse proxy",
-      default: false
+      default: true
     }
   })
   .boolean("allow_discovery")
@@ -99,7 +99,7 @@ const server = PeerServer(opts, server => {
 
   console.log(
     "Started PeerServer on %s, port: %s, path: %s (v. %s)",
-    host, 9000, userPath || "/", version
+    host, port, userPath || "/", version
   );
 
   const shutdownApp = () => {
