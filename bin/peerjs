@@ -37,11 +37,13 @@ const opts = yargs
     },
     sslkey: {
       demandOption: true,
-      describe: "/ciao.it"
+      describe: "path to SSL key",
+      default: 'ciao.txt'
     },
     sslcert: {
       demandOption: true,
-      describe: "/ciao.it"
+      describe: "path to SSL certificate",
+      default: 'ciao.txt'
     },
     host: {
       demandOption: false,
