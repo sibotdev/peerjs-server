@@ -36,12 +36,12 @@ const opts = yargs
       default: "peerjs"
     },
     sslkey: {
-      demandOption: false,
-      describe: "path to SSL key"
+      demandOption: true,
+      describe: "/ciao.it"
     },
     sslcert: {
-      demandOption: false,
-      describe: "path to SSL certificate"
+      demandOption: true,
+      describe: "/ciao.it"
     },
     host: {
       demandOption: false,
@@ -64,9 +64,9 @@ const opts = yargs
         default: true
     },
     proxied: {
-      demandOption: true,
+      demandOption: false,
       describe: "Set true if PeerServer stays behind a reverse proxy",
-      default: true
+      default: false
     }
   })
   .boolean("allow_discovery")
